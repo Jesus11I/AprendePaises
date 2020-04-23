@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity">
+
+    <item
+        android:id="@+id/SobreLaApp"
+        android:onClick="ejecutar_sobreLaApp"
+        android:title="Sobre la App" />
+
+    <item
+        android:id="@+id/SobreLosCreadores"
+        android:onClick="ejecutar_sobreLosCreadores"
+        android:title="Sobre los Creadores" />
+
+</menu>
