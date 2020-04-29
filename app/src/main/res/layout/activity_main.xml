@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     android:orientation="vertical"
     tools:context=".MainActivity">
 
@@ -17,9 +17,9 @@
         app:srcCompat="@drawable/baneras" />
 
     <LinearLayout
-        android:layout_below="@id/imageView_banderas"
         android:layout_width="match_parent"
         android:layout_height="200dp"
+        android:layout_below="@id/imageView_banderas"
         android:orientation="vertical">
 
         <Button
@@ -27,15 +27,15 @@
             android:layout_width="match_parent"
             android:layout_height="100dp"
             android:text="¡Adivina la Bandera!"
-            android:textSize="30sp"/>
+            android:textSize="20sp" />
 
         <Button
             android:id="@+id/boton_jugar_capitales"
             android:layout_width="match_parent"
             android:layout_height="100dp"
+            android:baselineAligned="false"
             android:text="¡Adivina la Capital!"
-            android:textSize="30sp"
-            />
+            android:textSize="20sp" />
 
 
     </LinearLayout>
