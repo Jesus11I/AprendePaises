@@ -1,43 +1,43 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
     <ImageView
         android:id="@+id/imageView_banderas"
-        android:layout_width="292dp"
-        android:layout_height="439dp"
-        app:srcCompat="@drawable/baneras"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="59dp"
-        tools:layout_editor_absoluteY="-10dp" />
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="20dp"
+        app:srcCompat="@drawable/baneras" />
 
-    <Button
-        android:id="@+id/boton_jugar_capitales"
+    <LinearLayout
+        android:layout_below="@id/imageView_banderas"
         android:layout_width="match_parent"
-        android:layout_height="100dp"
-        android:text="¡Adivina la Capital!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.827" />
+        android:layout_height="200dp"
+        android:orientation="vertical">
 
-    <Button
-        android:id="@+id/boton_jugar_banderas"
-        android:layout_width="match_parent"
-        android:layout_height="100dp"
-        android:text="¡Adivina la Bandera!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.619" />
+        <Button
+            android:id="@+id/boton_jugar_banderas"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:text="¡Adivina la Bandera!"
+            android:textSize="30sp"/>
+
+        <Button
+            android:id="@+id/boton_jugar_capitales"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:text="¡Adivina la Capital!"
+            android:textSize="30sp"
+            />
 
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+
+</RelativeLayout>

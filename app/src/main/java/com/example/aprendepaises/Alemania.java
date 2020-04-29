@@ -40,7 +40,8 @@ public class Alemania extends Activity implements View.OnClickListener {
                 Toast.makeText(this, "Error", Toast.LENGTH_SHORT).show();
                 break;
             case R.id.alemania:
-                Intent intent =new Intent(this,Espana.class);
+                Intent intent = new Intent(this,Espana.class);
+                startActivity(intent);
                 break;
             case R.id.suiza:
                 Toast.makeText(this, "Error", Toast.LENGTH_SHORT).show();
