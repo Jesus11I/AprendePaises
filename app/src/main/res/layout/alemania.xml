@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Alemania">
+
+    <ImageView
+        android:id="@+id/imageView2_Alemania"
+        android:layout_width="300dp"
+        android:layout_height="250dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/alemania" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageView2_Alemania"
+        android:layout_centerHorizontal="true"
+        android:layout_marginHorizontal="90dp"
+        android:layout_marginTop="40dp"
+        android:addStatesFromChildren="false"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/belgica"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:padding="30dp"
+            android:text="belgica"
+            android:textSize="25sp" />
+
+        <Button
+            android:id="@+id/alemania"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:padding="30dp"
+            android:text="alemania"
+            android:textSize="25sp" />
+
+        <Button
+            android:id="@+id/suiza"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="30dp"
+            android:text="suiza"
+            android:textSize="25sp" />
+    </LinearLayout>
+
+
+
+</RelativeLayout>
